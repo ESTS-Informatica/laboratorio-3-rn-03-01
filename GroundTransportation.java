@@ -23,5 +23,19 @@ public class GroundTransportation extends Transport
         this.licensePlate=licensePlate;
     }
     
+    public String getTransportType(){
+        return "Ground Transport";
+    }
+    
+    @Override
+    public String toString(){
+        final StringBuilder sb = new StringBuilder();
+        sb.append(super.toString());
+        sb.append(String.format("\n%15s: %s\n", "Tipo Transporte", getTransportType()));  
+        sb.append(String.format("%15s: %s\n", "License Plate", this.licensePlate));     
+        return sb.toString();
+    }
+
+    
     
 }
