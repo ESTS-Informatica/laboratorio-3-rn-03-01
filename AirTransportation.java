@@ -7,13 +7,14 @@
  */
 public class AirTransportation extends Transport
 {
-   private String name;
-   private int numberOfContainers;  
+    private static final double FEES =4.0;
+    private String name;
+    private int numberOfContainers;  
    
    public AirTransportation(String name, int numberOfContainers){
        this.name=name;
        this.numberOfContainers=numberOfContainers;
-       super.setFees(0.04);
+       this.setFees(FEES);
    }
    
    
