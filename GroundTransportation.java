@@ -15,5 +15,13 @@ public class GroundTransportation extends Transport
         super.setFees(FEES);
     }
     
+    public String getLicensePlate(){
+        return licensePlate;
+    }
+    
+    public void setLicensePlate(String licensePlate){
+        this.licensePlate=licensePlate;
+    }
+    
     
 }
